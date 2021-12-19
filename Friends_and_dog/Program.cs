@@ -1,10 +1,20 @@
-﻿int firstFriendspeed = 1;
-int secondFriendspeed = 2;
-int dogSpeed = 5;
-int distance = 10000;
+﻿Console.WriteLine("Введите скорость движения первого друга:");
+int firstFriendspeed = Convert.ToInt32(Console.ReadLine());   // Использование метода Convert для преобразования типа данных string в int.
+
+Console.WriteLine("Введите скорость движения второго друга:");
+int secondFriendspeed = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите скорость движения собаки:");
+int dogSpeed = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите величину расстояния между друзьями:");
+int distance = Convert.ToInt32(Console.ReadLine());
+
+
 int friend = 2;
 int count = 0;
 int time = 0;
+
 
 while (distance > 10)
 {
@@ -18,9 +28,9 @@ while (distance > 10)
         time = distance / (secondFriendspeed + dogSpeed);
         friend = 1;
     }
-    
-distance = distance - (firstFriendspeed + secondFriendspeed) * time;
-count++;
+
+    distance = distance - (firstFriendspeed + secondFriendspeed) * time;
+    count++;
 
 }
 
