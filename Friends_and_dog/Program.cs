@@ -1,19 +1,20 @@
-﻿Console.WriteLine("Введите скорость движения первого друга:");
-int firstFriendspeed = Convert.ToInt32(Console.ReadLine());   // Использование метода Convert для преобразования типа данных string в int.
-
+﻿
+Console.WriteLine("Введите скорость движения первого друга:");
+double firstFriendspeed = Convert.ToDouble(Console.ReadLine());   // Использование метода Convert для преобразования типа данных string в double.
+                                                                  // в случае с int преобразование выглядело бы Convert.Toint32()ю
 Console.WriteLine("Введите скорость движения второго друга:");
-int secondFriendspeed = Convert.ToInt32(Console.ReadLine());
+double secondFriendspeed = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите скорость движения собаки:");
-int dogSpeed = Convert.ToInt32(Console.ReadLine());
+double dogSpeed = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите величину расстояния между друзьями:");
-int distance = Convert.ToInt32(Console.ReadLine());
+double distance = Convert.ToDouble(Console.ReadLine());
 
 
 int friend = 2;
 int count = 0;
-int time = 0;
+double time = 0;
 
 
 while (distance > 10)
